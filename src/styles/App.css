@@ -1,2 +1,84 @@
 html {box-sizing:border-box;}
 *, *::before, *::after {box-sizing:inherit;}
+
+body{
+margin: 0;
+padding: 0;
+width: 90%;
+max-width: 1240px;
+line-height:1;
+justify-content: center;
+background-color:rgb(245, 222, 179);
+position:relative;
+border: 1px solid black;
+flex-direction: column;
+}
+ 
+
+.center{
+    background-color: lightskyblue;
+    border: 1px solid black;
+    display:flex;
+}
+
+.div{
+    display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.box{
+
+    display:flex;
+    flex-wrap: nowrap;
+}
+
+
+.container{
+    
+    width:1000px;
+    height:950px;
+    display: inline-block;
+    
+    text-align: center;
+    
+}
+
+.card-image{
+    
+    text-align:center;
+    widows: 3px;
+    height:80px;
+  
+    
+
+
+
+}
+
+.image{
+    width:0px;
+    height: 0px;
+    margin: auto;
+    justify-content:center;
+    text-align: center;
+    display: inline-block;
+     display:flex;
+     flex-wrap: nowrap;
+     flex-direction: row;
+    
+    
+
+}
+
+
+.card {
+    width: 1000px;
+  height: auto;
+  display: flex; 
+ text-align: center;
+
+
+}
+

@@ -1,19 +1,44 @@
-import React from 'react'
-import 'normalize.css/normalize.css'
+import React, { Component } from 'react';
+import { connect } from 'react-redux'
 import '../styles/App.css'
-import { Provider } from 'react-redux'
-import store from '../store'
 
-import Button from './Button'
-import Greeting from './Greeting'
+ class Home extends Component{
+   render() {
+       let itemList = this.props.items.map(item => {
+        return (
+          <div className="card" key={item.id}>
+            <div className="card-image">
+              <img src={item.img} alt={item.title}/>
+              <span className="card-title">
+                {item.title}
+              </span>
+              <span to="/" className="btn-floating halfway-fab waves-effect waves-light red">
+                <i>add</i>
+              </span>
+            </div>
+            <div className="card-content">
+              <p>{item.desc}</p>
+              <p><b>Price: ${item.price}</b></p>
+            </div>
+          </div>
+        )
+       })
+       return(
+        <div className="container">
+            <h3 className="center">Our items</h3>
+            <div className="box">
+                {itemList}
+            </div>
+        </div>
+    )
+   }
 
-export default props => {
-  return (
-    <Provider store={store}>
-      <div>
-        <Button />
-        <Greeting />
-      </div>
-    </Provider>
-  )
 }
+
+const mapStateToProps = (state)=>{
+  return {
+    items: state.items
+  }
+}
+
+export default connect(mapStateToProps)(Home)
