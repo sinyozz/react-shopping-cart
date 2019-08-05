@@ -5,6 +5,6 @@ export default props => {
   const greeting = useSelector(appState => appState.greeting)
 
   return (
-    <h1>Shopping Cart: {greeting}</h1>
+    <h1>Shopping Cart:{greeting}</h1>
   )
 }

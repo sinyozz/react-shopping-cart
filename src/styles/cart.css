@@ -1,0 +1,215 @@
+html {box-sizing:border-box;}
+*, *::before, *::after {box-sizing:inherit;}
+
+.cart i {
+  display: none;
+}
+
+.cart {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  background-color: rgb(26, 26, 31);
+  top: 0;
+  right: 0;
+  color: white;
+  z-index: 2;
+}
+
+.closecart {
+  position: absolute;
+  margin-left: -50px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background-color: rgb(26, 26, 31);
+  outline: none;
+  border: none;
+  color: white;
+}
+
+.cartheader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+.cartheader h1 {
+  color: white;
+  font-weight: 300;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.cartheader i {
+  display: flex;
+}
+
+.itemqty {
+  position: absolute;
+  background-color: rgb(225,188,63);
+  border-radius: 50%;
+  color: black;
+  width: 25px;  
+  height: 25px;
+  text-align: center;
+  line-height: 27px;
+  top: 0;
+  left: 43%;
+  margin-top: 30px;
+}
+
+.cart ul {
+  list-style: none;
+  padding: 0px;
+  flex-grow: 1;
+  overflow: scroll;
+  
+}
+
+.itemdelete {
+  background: transparent;
+  outline: none;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 10px;
+  margin-top: 3px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.itemdelete:hover {
+  color: white;
+}
+
+.itemdelete:hover ~ .price {
+  text-decoration: line-through;
+}
+
+.cartitem {
+  width: 90%;
+  border-top: .7px solid black;
+  display: flex;
+  justify-content: row;
+  align-items: center;
+  position: relative;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px
+}
+
+
+.cartitem img {
+  width: 60px;
+  margin-top: 10px;
+}
+
+.details {
+  flex-grow: 1;
+  padding-left: 15px;
+  height: auto;
+  font-weight: lighter;
+  color: grey;
+  line-height: 2px;
+}
+
+.name {
+  color: white;
+}
+
+.price {
+  color: rgb(225,188,63);
+  padding-right: 10px;
+  font-size: 16px;
+}
+
+.total {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: rgb(26, 26, 31);
+  box-shadow: 0 -5px 20px -5px rgb(6, 6, 7);
+}
+
+.total div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px;
+}
+
+.total div h2 {
+  flex-grow: 1;
+  color: grey;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.total div h3 {
+  font-size: 29px;
+  font-weight: 300;
+}
+
+.total button {
+  height: 50px;
+  width: 300px;
+  margin: auto;
+  margin-bottom: 15px;
+  background-color: black;
+  border: none;
+  color: white;
+}
+
+/* TO HIDE CART*/
+.hidden {
+  display: none;
+}
+
+
+
+
+
+
+
+
+/* **.App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  } */

@@ -1,0 +1,88 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+
+
+.page {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.side-bar {
+  width: 15%;
+  height: 180px;
+  border: solid black;
+}
+
+
+
+
+body {
+  width: 100%;
+  
+}
+
+
+
+
+.top {
+  height: 100px;
+  
+  border: color black;
+  
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+
+.top {
+  padding-top: 50px;
+}
+
+img {
+  width: 180px;
+  height: 310px;
+  padding: 10px;
+}
+
+.cart-icon {
+  padding: 10px;
+}
+
+.add-to-cart {
+  background-color: pink;
+  text-align: center;
+  font-size: 12px;
+  width: 80%;
+}
+
+.atc-outline {
+  padding: 5px;
+}
+
+.card {
+  padding: 20px;
+  margin-bottom: 5px;
+  border: 1px solid black;
+
+}
